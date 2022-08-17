@@ -1,3 +1,5 @@
+// types
+
 let a: number;
 let b: boolean;
 let c: string;
@@ -14,3 +16,24 @@ const Blue = 2;
 enum Color {Red = 0 , Green = 1, Purple = 2, Blue = 3};
 let backgroundColor = Color.Green;
 
+
+// type assertion
+
+let message;
+message = 'abc';
+let endsWithC = (<string>message).endsWith('c');
+let alternativeWay = (message as string).endsWith('c');
+
+// arrow functions
+
+let c2 = function (message){
+    console.log(message);
+} 
+let c5 = () => console.log("Hello world");
+
+let c4 = (message) => console.log(message);
+
+let c3 = (message) =>{
+    console.log('From the Author');
+    console.log(message);
+}
