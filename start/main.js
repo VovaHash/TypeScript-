@@ -1,5 +1,5 @@
-function log(msg) {
-    console.log(msg);
-}
-var message = "Hello bruh";
-log(message);
+var a;
+a = 5;
+a = 'a';
+a = true;
+console.log(a);
